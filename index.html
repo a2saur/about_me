@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>About Me</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Alexa Saur</h1>
+        <img src="https://cdn.britannica.com/26/162626-050-3534626F/Koala.jpg" alt="Koala on branch" class="frame">
+    </header>
+
+    <nav id="navbar">
+        <a id="about-link" class="highlight" href="#about">About</a> | 
+        <a id="projects-link" href="#projects">Projects</a> | 
+        <a id="skills-link" href="#skills">Skills/Hobbies</a> | 
+        <a id="contact-link" href="#contact-me">Contact_Me</a>
+    </nav>
+
+    <main>
+        <!--
+            Hobbies: Coding, Drawing, Gaming, Origami, Stop Motion Animation, Rock Climbing, 
+        -->
+        <div id="about">
+            <h2>About</h2>
+            Hi! I'm Alexa and welcome to my website!
+            <br><br>I am a technology and STEM enthusiast who enjoys a wide range of hobbies, including coding, drawing, gaming, origami, stop motion animation, rock climbing, and more!
+        </div>
+
+        <br><br>
+
+        <div id="projects">
+            <h2>Projects</h2>
+            <button type="button" class="cards ocean-eddies">
+                <b class="project-title">Ocean Eddies</b>
+                <br>
+                <div class="clickable">Read More</div>
+                <div class="clickable"><a href="https://github.com/a2saur/ocean-motion">Click Here to Check out my Code!</a></div>
+            </button>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero veniam quo, ducimus ipsum earum sunt obcaecati id fugit libero tenetur, molestiae tempore rerum, autem natus reprehenderit eius nam. Numquam velit, voluptatibus, consequuntur quae architecto, facere molestias officia fugit sed corrupti laboriosam temporibus eum nesciunt laborum! Ratione tempore amet distinctio quidem?
+            </div>
+            <br>
+
+            <button type="button" class="cards games">
+                <b class="project-title">Games</b>
+                <br>
+                <div class="clickable">Read More</div>
+                <div class="clickable"><a href="https://github.com/a2saur/A2-Games">Click Here to Check out my Code!</a></div>
+            </button>
+            <div class="content">
+                Here you can find my GitHub Repository containing various javascript games. Almost all of them are original game ideas! The corresponding html files aren't included, though.
+            </div>
+            <br>
+        </div>
+        <button type="button" class="cards misc">
+            <b class="project-title">Miscellaneous</b>
+            <br>
+            <div class="clickable">Read More</div>
+            <div class="clickable">
+                <a href="https://github.com/a2saur/Personal">Click Here to Check out my Code!</a>
+            </div>
+        </button>
+        <div class="content">
+            This is my GitHub Repository containing miscellaneous projects I've done. Currently, they are all in python and range from text based games to photo editors to random generators.
+        </div>
+        
+        <br><br>
+        
+        <div id="skills">
+            <h2>Skills & Hobbies</h2>
+            <p><b>Note:</b> None of these will be at 100% because there's always more to learn!</p>
+            <!-- <div class="skill-coding">
+                <h3>Coding</h3>
+                I know Python, HTML, CSS, Java, and Javascript. You can check out some of the programs I have built in Python and Javascript in the <a href="#projects" class="normal-link">Projects</a> section. For HTML and CSS, just look through this website! As for Java, I haven't made any running programs yet. -->
+        </div>
+            <div class="skills">
+                <progress_title>Python</progress_title>
+                <div class = "progress">
+                    <div class="progress-bar">
+                        <div class="progress-filling" style="width:99%">99%</div>
+                    </div>
+                </div>
+
+                <progress_title>HTML</progress_title>
+                <div class = "progress">
+                    <div class="progress-bar">
+                        <div class="progress-filling" style="width:99%">99%</div>
+                    </div>
+                </div>
+
+                <progress_title>CSS</progress_title>
+                <div class = "progress">
+                    <div class="progress-bar">
+                        <div class="progress-filling" style="width:80%">80%</div>
+                    </div>
+                </div>
+
+                <progress_title>Javascript</progress_title>
+                <div class = "progress">
+                    <div class="progress-bar">
+                        <div class="progress-filling" style="width:70%">70%</div>
+                    </div>
+                </div>
+
+                <progress_title>Java</progress_title>
+                <div class = "progress">
+                    <div class="progress-bar">
+                        <div class="progress-filling" style="width:60%">60%</div>
+                    </div>
+                </div>
+
+                <progress_title>Data Science</progress_title>
+                <div class = "progress">
+                    <div class="progress-bar">
+                        <div class="progress-filling" style="width:50%">50%</div>
+                    </div>
+                </div>
+
+                <progress_title>Public Speaking</progress_title>
+                <div class = "progress">
+                    <div class="progress-bar">
+                        <div class="progress-filling" style="width:75%">75%</div>
+                    </div>
+                </div>
+            </div>
+        
+        <br><br>
+        
+        <div id="contact-me">
+            <h2>Contact Me</h2>
+            ✉ Email: <a href="mailto:alexalsaur@gmail.com" class="normal-link">alexalsaur@gmail.com</a>
+        </div>
+
+        <br><br>
+
+
+    </main>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+
+        var coll = document.getElementsByClassName("cards");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+            content.style.display = "none";
+            } else {
+            content.style.display = "block";
+            }
+        });
+        }
+
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        function check() {
+            var about_sect = document.getElementById("about");
+            var about_link = document.getElementById("about-link");
+
+            var proj_sect = document.getElementById("projects");
+            var proj_link = document.getElementById("projects-link");
+
+            var skills_sect = document.getElementById("skills");
+            var skills_link = document.getElementById("skills-link");
+
+            var contact_sect = document.getElementById("contact-me");
+            var contact_link = document.getElementById("contact-link");
+
+            if (isInViewport(about_sect)){
+                about_link.classList.add("highlight");
+                proj_link.classList.remove("highlight");
+                skills_link.classList.remove("highlight");
+                contact_link.classList.remove("highlight");
+            } else if (isInViewport(proj_sect)){
+                about_link.classList.remove("highlight");
+                proj_link.classList.add("highlight");
+                skills_link.classList.remove("highlight");
+                contact_link.classList.remove("highlight");
+            } else if (isInViewport(skills_sect)){
+                about_link.classList.remove("highlight");
+                proj_link.classList.remove("highlight");
+                skills_link.classList.add("highlight");
+                contact_link.classList.remove("highlight");
+            } else if (isInViewport(contact_sect)){
+                about_link.classList.remove("highlight");
+                proj_link.classList.remove("highlight");
+                skills_link.classList.remove("highlight");
+                contact_link.classList.add("highlight");
+            }
+        }
+
+        setInterval(check, 30);
+
+        </script>
+</body>
+</html>

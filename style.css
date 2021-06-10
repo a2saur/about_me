@@ -1,0 +1,252 @@
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-repeat: no-repeat;
+            background-image: linear-gradient(to top, #5cb0ff, #78c4ff, #abdaff, #d1f0ff)
+        }
+
+        header {
+            margin: 0;
+            padding:2%;
+            background-image: linear-gradient(to left, #000050, #000090, #0000ff, #5cb0ff);
+        }
+
+        h1 {
+            color:#ffffff;
+            text-shadow: 0.3vw 0.3vw #000000;
+            margin:1%;
+        }
+
+        img {
+            height:20%;
+            width:20%;
+        }
+
+        .frame {
+            border-radius: 100px 100px 100px 100px;
+            /*background-color: #ffdb65;
+            border: 1vw double #ca9b00;*/
+            border: 0.7vw solid #fff;
+        }
+
+        #navbar {
+            overflow: hidden;
+            width: 98.05%;
+            background-color: #000050;
+            margin: 0;
+            padding: 1%;
+            text-align:center;
+            word-spacing: 3vw;
+            color:#ffffff;
+        }
+
+        a {
+            color:#ffffff;
+            
+        }
+
+        .highlight {
+            background-color: #FFFF00;
+            padding:1%;
+            color:#000;
+        }
+
+        .normal-link {
+            color: #0000ff;
+        }
+        
+        .sticky {
+            width: 94%;
+            position: fixed;
+            top: 0;
+        }
+
+        main {
+            padding-right: 2%;
+            padding-left: 2%;
+        }
+
+        .cards{
+            padding: 1%;
+            width: 100%;
+            margin-top:1%;
+            color:#FFFFFF;
+            text-shadow: 0px 0px 30px #000, 0px 0px 30px #000;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            border: 5px solid #000;
+        }
+
+        .clickable {
+            background-color:#FFF;
+            color:#000;
+            width:40%;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:0.5%;
+            margin-bottom:0.5%;
+            padding:1%;
+            text-shadow: 0px 0px rgba(0, 0, 0, 0);
+            border-radius: 5px 5px 5px 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .clickable a {
+            color:#000;
+        }
+
+        button{
+            border-color: rgba(0, 0, 0, 0);
+        }
+
+        
+        /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+        .cards:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Style the collapsible content. Note: hidden by default */
+        .content {
+            padding: 1%;
+            display: none;
+            overflow: hidden;
+            background-color: #ffffff;
+        }
+
+        .ocean-eddies{
+            background-image:url("https://cdn.pixabay.com/photo/2020/02/02/19/09/waterpolo-4813899__340.jpg");
+        }
+
+        .games {
+            background-image:url("https://cdn.pixabay.com/photo/2016/02/23/02/17/joystick-1216816_1280.jpg");
+            background-position: center;
+        }
+
+        .misc {
+            background-image:url("https://i0.hippopx.com/photos/396/260/987/board-electronics-computer-data-processing-preview.jpg");
+            background-position: center;
+        }
+
+        .skill-coding {
+            border: 5px solid #d1f0ff;
+            background-color:#000050;
+            padding:1%;
+            color:#78c4ff;
+        }
+
+        .skill-coding h3 {
+            margin:0.1%;
+            padding:0;
+        }
+
+        .skill-coding a {
+            color:#d1f0ff;
+        }
+
+        .progress-bar {
+            border-radius:1vw 1vw 1vw 1vw;
+            width:99%;
+            background-color:#ffffff;
+            margin-top:0.5%;
+            margin-bottom:3%;
+            padding-right: 1%;
+        }
+
+        .progress-filling {
+            border-radius:1vw 0 0 1vw;
+            background-color:#00ff00;
+            color:#000000;
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+            padding-left:1%;
+        }
+
+        progress_title {
+            margin-left:0.5%;
+        }
+
+        /* .skills {
+            display: flex;
+        }
+
+        .progress {
+            flex: 0.5;
+        } */
+
+        @media screen and (min-width: 801px) {
+            main {
+                font-size: 2vw;
+            }
+
+            #navbar {
+                font-size:3vw;
+            }
+
+            .project-title{
+                font-size:3vw;
+            }
+
+            h1 {
+                font-size:5vw;
+            }
+
+            .clickable {
+                font-size: 2vw;
+            }
+
+            progress_title {
+                font-size:2vw;
+            }
+        }
+
+        @media screen and (min-width: 601px) and (max-width: 800px) {
+            main {
+                font-size: 2vw;
+            }
+
+            #navbar {
+                font-size:3vw;
+            }
+
+            .project-title{
+                font-size:3vw;
+            }
+
+            h1 {
+                font-size:7vw;
+            }
+
+            .clickable {
+                font-size: 2vw;
+            }
+
+            progress_title {
+                font-size:2vw;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            main {
+                font-size: 3vw;
+            }
+
+            #navbar {
+                font-size:4vw;
+            }
+
+            .project-title{
+                font-size:4vw;
+            }
+
+            h1 {
+                font-size:7vw;
+            }
+
+            .clickable {
+                font-size: 3vw;
+            }
+
+            progress_title {
+                font-size:3vw;
+            }
+        }
