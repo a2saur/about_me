@@ -152,6 +152,10 @@
             padding-right: 1%;
         }
 
+        .progress-bar:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
         .progress-filling {
             border-radius:1vw 0 0 1vw;
             background-color:#00ff00;
