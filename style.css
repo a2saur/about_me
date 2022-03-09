@@ -23,6 +23,10 @@
             width:20%;
         }
 
+        img:hover {
+            box-shadow: 0 0 15px rgb(255, 243, 135);
+        }
+
         .frame {
             border-radius: 100px 100px 100px 100px;
             /*background-color: #ffdb65;
@@ -135,7 +139,22 @@
         }
 
         .misc {
+            background-image:url("https://upload.wikimedia.org/wikipedia/commons/a/ab/Pexels-luis-gomes-546819.jpg");
+            background-position-y: 30%;
+        }
+
+        .bridgeup {
+            background-image:url("https://upload.wikimedia.org/wikipedia/commons/2/20/Marine_Life_Hall%2C_American_Museum_of_Natural_History_%287356570628%29.jpg");
+            background-position-y: 50%;
+        }
+
+        .cs50 {
             background-image:url("https://i0.hippopx.com/photos/396/260/987/board-electronics-computer-data-processing-preview.jpg");
+            background-position: center;
+        }
+
+        .aiml {
+            background-image:url("https://www.maxpixel.net/static/photo/1x/Cpu-Electronics-Processor-Pc-Computer-Chip-4131844.jpg");
             background-position: center;
         }
 
