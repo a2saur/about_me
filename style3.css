@@ -1,0 +1,48 @@
+.sticky-right{
+    background-color:rgb(84, 88, 106);
+    position:sticky;
+    top:0;
+    float:right;
+    padding:2%;
+    transform: translateY(50%);
+    max-width: 30vw;
+}
+
+.sticky-right ul{
+    list-style-type: none;
+}
+
+.sticky-right a{
+    color:#FFF;
+    text-decoration: none;
+    width:100%;
+    text-align: center;
+}
+
+.sticky-right a:hover{
+    background-color: rgb(211, 220, 255);
+    color:#000;
+}
+
+.recipe {
+    border-style: solid;
+    border-color: rgb(144, 44, 178);
+    padding:2%;
+}
+
+.ingredients {
+    border-style: solid;
+    border-color: rgb(85, 147, 107);
+    padding:2%;
+}
+
+ul {
+    padding:0;
+    margin:0;
+    padding-left:15%;
+}
+
+.bold {
+    text-decoration: underline !important;
+    font-weight: bold;
+}
